@@ -1,11 +1,25 @@
 body {
-  background-image: "./Burger.jpg";
+  background-image: url("../Burger.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(117, 85, 15, 0.9);
+  border-radius: 2px;
 }
 
+ul {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0;
+}
 li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    list-style: none;
   }
   
   .label {
@@ -22,3 +36,36 @@ li {
     margin-bottom: 5px;
   }
   
+.eaten-burger-list, .uneaten-burger-list {
+  display: inline-block;
+  width: 49%;
+}
+
+.uneaten-burger-list > div  {
+  text-align: center;
+  background-color: rgba(225, 163, 29, 0.6);
+  border-radius: 5%;
+  display: inline-block;
+}
+.eaten-burger-list > div {
+  text-align: center;
+  background-color: rgba(225, 163, 29, 0.6);
+  border-radius: 5%;
+  display: inline-block;
+}
+
+.eaten-burger-list {
+  text-align: right;
+}
+
+.add-a-burger {
+  text-align: center;
+}
+
+.background-container {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(225, 163, 29, 0.6);
+  border-radius: 5%;
+  margin-top: 20px;
+}
